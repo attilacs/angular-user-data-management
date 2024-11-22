@@ -14,6 +14,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/angular-user-data-management",
+            "baseHref": "/angular-user-data-management/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
