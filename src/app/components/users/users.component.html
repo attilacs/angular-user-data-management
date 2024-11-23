@@ -1,1 +1,6 @@
-<h1>{{ title | titlecase}}</h1>
+<h1>{{ title | titlecase }}</h1>
+@for(user of users$ | async; track user.id){
+<p>{{ user.name }}</p>
+} @empty {
+<p>There are no users</p>
+}
