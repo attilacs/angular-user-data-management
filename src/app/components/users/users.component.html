@@ -1,6 +1,7 @@
 <h1>{{ title | titlecase }}</h1>
+<button type="button" (click)="onAdd()">Add</button>
 @for(user of users$ | async; track user.id){
-<p>{{ user.name }}</p>
+<app-user [user]="user"></app-user>
 } @empty {
 <p>There are no users</p>
 }
